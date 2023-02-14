@@ -2,7 +2,6 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import { Provider } from "react-redux";
 import App from "./App";
-import reportWebVitals from "./reportWebVitals";
 import "@fontsource/source-code-pro/700.css";
 import "@fontsource/source-code-pro/600.css";
 import "@fontsource/source-code-pro/400.css";
@@ -21,5 +20,3 @@ root.render(
     </Provider>
   </React.StrictMode>
 );
-
-reportWebVitals();

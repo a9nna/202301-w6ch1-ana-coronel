@@ -52,5 +52,15 @@
     "husky": "^8.0.0",
     "prettier": "2.8.4",
     "styled-components": "^5.3.6"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.ts",
+      "src/**/*.tsx",
+      "!src/index.tsx",
+      "!src/store/index.ts",
+      "!src/store/hooks.ts",
+      "!src/react-app-env.d.ts"
+    ]
   }
 }

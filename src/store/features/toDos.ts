@@ -12,7 +12,8 @@ export const toDos = createSlice({
   initialState: initialtoDos,
   reducers: {
     loadApi(currentState, action: PayloadAction<ToDoTask[]>) {
-      currentState = action.payload;
+      const apiData = action.payload;
+      return apiData;
     },
   },
 });

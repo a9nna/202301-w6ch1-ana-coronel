@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import ToDo from "./components/ToDo/ToDo";
+import ToDos from "./components/ToDos/ToDos";
 import useApiData from "./hooks/useApiData";
 import { useAppSelector } from "./store/hooks";
 
@@ -14,7 +14,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <ToDo toDo={toDos}></ToDo>
+      <ToDos toDos={toDos}></ToDos>
     </div>
   );
 };

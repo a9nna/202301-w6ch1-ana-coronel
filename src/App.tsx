@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import AppStyled from "./AppStyled";
 import ToDos from "./components/ToDos/ToDos";
 import useApiData from "./hooks/useApiData";
 import { useAppSelector } from "./store/hooks";
@@ -13,9 +14,10 @@ const App = () => {
   const toDos = useAppSelector((state) => state.tasks);
 
   return (
-    <div className="App">
+    <AppStyled>
+      <h1>To Do list</h1>
       <ToDos toDos={toDos}></ToDos>
-    </div>
+    </AppStyled>
   );
 };
 
